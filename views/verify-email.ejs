@@ -7,6 +7,9 @@
     <meta name="x-apple-disable-message-reformatting">  <!-- Disable auto-scale in iOS 10 Mail entirely -->
     <title>Email address verification</title> <!-- The title tag shows in email notifications, like Android 4.4. -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:300,400,500' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Rubik:300,400,500' rel='stylesheet'>
+
 
     <!-- CSS Reset : BEGIN -->
     <style>
@@ -111,28 +114,11 @@
 			}
 
 			</style>
-			<!-- CSS Reset : END -->
 
-			<!-- Progressive Enhancements : BEGIN -->
 			<style>
 
-			.primary{
-				background: #30e3ca;
-			}
 			.bg_white{
 				background: #ffffff;
-			}
-			.bg_light{
-				background: #fafafa;
-			}
-			.bg_black{
-				background: #000000;
-			}
-			.bg_dark{
-				background: rgba(0,0,0,.8);
-			}
-			.email-section{
-				padding:2.5em;
 			}
 
 			/*BUTTON*/
@@ -141,71 +127,43 @@
 				display: inline-block;
 			}
 			.btn.btn-primary{
-				display: block;
-				margin: 20px auto;
-				width: max-content;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				padding: 8px 20px;
+				gap: 8px;
+
+				width: 166px;
+				height: 44px;
+
+				background: #00FA64;
+				border-radius: 36px;
+
+				/* Inside auto layout */
+
+				flex: none;
+				order: 0;
+				flex-grow: 0;
 				
-				background: #5D91E8;
-				color: #ffffff;
-			}
-			.btn.btn-white{
-				border-radius: 5px;
-				background: #ffffff;
+				background: #00FA64;
 				color: #000000;
-			}
-			.btn.btn-white-outline{
-				border-radius: 5px;
-				background: transparent;
-				border: 1px solid #fff;
-				color: #fff;
-			}
-			.btn.btn-black-outline{
-				border-radius: 0px;
-				background: transparent;
-				border: 2px solid #000;
-				color: #000;
-				font-weight: 700;
 			}
 
 			h1,h2,h3,h4,h5,h6{
-				font-family: 'Lato', sans-serif;
+				font-family: 'Roboto';
 				color: #000000;
 				margin-top: 0;
 				font-weight: 400;
 			}
 
 			body{
-				font-family: 'Lato', sans-serif;
+				font-family: 'Roboto';
 				font-weight: 400;
 				font-size: 15px;
 				line-height: 1.8;
 				color: rgba(0,0,0,.4);
 			}
 			
-			/*HERO*/
-			.hero{
-				position: relative;
-				z-index: 0;
-			}
-
-			.hero .text{
-				color: rgba(0,0,0,.3);
-			}
-			.hero .text h2{
-				color: #000;
-				font-size: 40px;
-				margin-bottom: 0;
-				font-weight: 400;
-				line-height: 1.4;
-			}
-			.hero .text h3{
-				font-size: 24px;
-				font-weight: 300;
-			}
-			.hero .text h2 span{
-				font-weight: 600;
-				color: #30e3ca;
-			}
 			
 			.email-body{
 				display: block;
@@ -213,6 +171,19 @@
 				line-height: 32px;
 				font-weight: 300;
 				font-size: 22px;
+				font-family: 'Roboto';
+			}
+
+
+			.body2 {
+				font-family: 'Roboto';
+				font-style: normal;
+				font-weight: 400;
+				font-size: 14px;
+				line-height: 143%;
+				margin: 3em 0 3em 0;
+				letter-spacing: 0.25px;
+				color: rgba(19, 23, 32, 0.87);
 			}
 			@media (max-width:400px){
 				.hero img{
@@ -222,31 +193,45 @@
 		</style>
 	</head>
 
-	<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #f1f1f1; display: flex; align-items: center; justify-content: center;">
+	<body width="100%" style="margin: 0; padding: 0 !important; background-color: #f1f1f1; display: flex; align-items: center; justify-content: center;">
 		<center style="width: 100%; background-color: #f1f1f1;">
-			<div style="display: none; font-size: 1px;max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">
-				Olá, clique no botão abaixo para verificar seu endereço de email
-			</div>
 			<div style="max-width: 600px; margin: 0 auto;" class="email-container">
 				<!-- BEGIN BODY -->
 				<table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin: auto;">
 					<tr>
 						<td valign="middle" class="hero bg_white" style="padding: 3em 0 2em 0;">
-							<img src="https://hr4results.gupy.io/hubfs/Insira%20o%20Logo%20aqui!%20(63).png" alt="" class="g-img" style="width: 200px; height: auto; margin: auto; display: block;">
+							<img src="../Logo-White.png" alt="" class="g-img" style="width: 150px; height: auto; margin: auto; display: block;">
 						</td>
 					</tr><!-- end tr -->
 					<tr>
-						<td valign="middle" class="hero bg_white" style="padding: 2em 0 4em 0;">
+						<td valign="middle" class="hero bg_white">
 							<table>
 								<tr>
 									<td>
-										<div class="text" style="padding: 0 2.5em; text-align: center;">
-											<h2 style="margin-bottom: 20px; font-size: 32px;">Verifique seu Email</h2>
-											<p class="email-body">
-												Obrigado por se inscrever conosco. Clique no botão abaixo para verificar seu endereço de e-mail.
-												<a href="<%= actionLink %>" target="_blank" class="btn btn-primary">Verifique seu Email</a>
-												Se este e-mail não foi destinado a você, sinta-se à vontade para excluí-lo.<br/>
+										<div class="text" style="padding: 0 2.5em; text-align: left; color: #000000;">
+											<h2 style="margin-bottom: 20px; font-size: 32px; font-family: Rubik;">Verifique o seu endereço de e-mail</h2>
+											<div style="font-family: 'Roboto'; font-size: 16px;">
+													<p style="font-weight: 500; font-family: 'Rubik'; font-size: 18px;">Olá,</p>
+													Para validarmos o acesso ao seu aplicativo com segurança, clique no botão abaixo para verificar seu e-mail:
+													<div style="height: 82px; margin: 2em 0 0 0; font-family: 'Rubik'; font-weight: 500; font-size: 16px;">
+														<a href="<%= actionLink %>" target="_blank" class="btn btn-primary">Verificar e-mail</a>
+													</div>
+											</div>
+											<div style=" letter-spacing: 0.25px; font-size: 14px; font-family: 'Roboto';">
+												Este link expira em 1 hora. Se expirar, você terá que se inscrever novamente.<br style='content: ""; margin: 0.5em; display: block; '/>
+												Caso você não tenha solicitado essa verificação, desconsidere este e-mail.
+											</div>
+												
+											<p class="email-body" style="font-size: 16px; margin: 2em">
+												<p style="font-weight: 500; margin: 0em; font-size: 18px;">Abraços,</p>
+												<p style="font-size: 16px; margin: 0 0 1em 0;">Equipe Ágatha</p>
 											</p>
+											<hr style="border: 3px solid #F1F1F1; margin: 2em 0 2em 0 "></hr>
+											<p class="body2">Precisa de ajuda? Entre em contato com o <a href="#" style="text-decoration: underline; color: #000000">Suporte.</a></p>
+										</div>
+										<div style="background-color: #000000; height: 96px; text-align: center;">
+											<span style="display: flex; height: 100%;" />
+											<img src="../3778-Logo.png" alt="" class="g-img" style="width: 100px; height: auto; margin: auto; ">
 										</div>
 									</td>
 								</tr>
