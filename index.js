@@ -35,7 +35,7 @@ app.get('/', (req, res) => {
 
 app.post('/send-custom-verification-email', async (req, res) => {
   const {userEmail, redirectUrl} = req.body
-  const dynamicLinkUrl = 'e0a5-2804-14c-5bd8-5c4d-46aa-7de2-6027-52ee.sa.ngrok.io'
+  /* const dynamicLinkUrl = 'https://agilizzacredbiguacu.com.br/eNh4' */
   const testRedirectUrl = 'http://localhost:3001'
   const emailValidate = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)+$/
 
@@ -47,7 +47,6 @@ app.post('/send-custom-verification-email', async (req, res) => {
 
   const actionCodeSettings = {
     url: testRedirectUrl,
-    dynamicLinkDomain: dynamicLinkUrl
   }
 
   try{
@@ -69,7 +68,6 @@ app.post('/send-custom-verification-email', async (req, res) => {
     }
     res.status(500).json({message})}
 })
-
 
 // listener
 app.listen(PORT, () => {
