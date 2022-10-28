@@ -9,11 +9,11 @@ sgMail.setApiKey(SENDGRID_KEY)
 module.exports = function sendVerificationEmail(userEmail, template, actionLink){
   const message = {
     from: {
-      name: 'Custom verify',
+      name: 'Ágatha',
       email: VERIFIED_EMAIL
     },
     to: userEmail,
-    subject: 'Verify your email address',
+    subject: 'Verificação de e-mail',
     text: `Thanks for signing up with us. Follow the link below to verify your email address.
     \n\n${actionLink} \n\nIf this email wasn't intended for you feel free to delete it.`,
     html: template
